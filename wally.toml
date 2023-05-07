@@ -1,0 +1,9 @@
+[package]
+name = "p3tray/topbarplus"
+description = "Fork of 1ForeverHD/TopbarPlus for use in Wally."
+version = "2.9.1"
+license = "GPL v3.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
