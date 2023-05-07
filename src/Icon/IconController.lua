@@ -34,8 +34,6 @@ local voiceChatIsEnabledForUserAndWithinExperience = false
 local disableControllerOption = false
 local STUPID_CONTROLLER_OFFSET = 32
 
-
-
 -- LOCAL FUNCTIONS
 local function checkTopbarEnabled()
 	local success, bool = xpcall(function()
@@ -131,7 +129,13 @@ IconController.midGap = 12
 IconController.rightGap = 12
 IconController.leftOffset = 0
 IconController.rightOffset = 0
-IconController.voiceChatEnabled = nil
+--[[
+	STOPS STUDIO WARNING; ASSUMES VOICE IS ENABLED.
+]]--
+IconController.voiceChatEnabled = true --nil
+--[[
+	STOPS STUDIO WARNING; ASSUMES VOICE IS ENABLED.
+]]--
 IconController.mimicCoreGui = true
 IconController.healthbarDisabled = false
 IconController.activeButtonBCallbacks = 0
